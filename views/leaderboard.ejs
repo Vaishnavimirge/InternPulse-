@@ -1,0 +1,114 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Intern Leaderboard | InternPulse</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(to right, #e0f7fa, #f9f9f9);
+      color: #2d2d2d;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .leaderboard-container {
+      background-color: #ffffff;
+      padding: 40px;
+      border-radius: 15px;
+      width: 90%;
+      max-width: 600px;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+      text-align: center;
+    }
+
+    .leaderboard-container h2 {
+      font-size: 2em;
+      margin-bottom: 10px;
+      color: #00796b;
+    }
+
+    .leaderboard-sub {
+      color: #666;
+      font-size: 0.95em;
+      margin-bottom: 25px;
+    }
+
+    ol {
+      padding: 0;
+      list-style: none;
+    }
+
+    li {
+      background: #f1f8e9;
+      margin: 10px 0;
+      padding: 15px 20px;
+      border-radius: 8px;
+      font-size: 1.1em;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    li:nth-child(1) {
+      background: #ffd70022;
+      font-weight: bold;
+      border: 2px solid #ffd700;
+    }
+
+    li:nth-child(2) {
+      background: #c0c0c022;
+      font-weight: bold;
+      border: 2px solid #c0c0c0;
+    }
+
+    li:nth-child(3) {
+      background: #cd7f3222;
+      font-weight: bold;
+      border: 2px solid #cd7f32;
+    }
+
+    .rank-badge {
+      font-size: 1.2em;
+      font-weight: bold;
+      color: #333;
+    }
+
+    .home-link {
+      display: inline-block;
+      margin-top: 25px;
+      padding: 10px 20px;
+      text-decoration: none;
+      background-color: #00796b;
+      color: #fff;
+      border-radius: 6px;
+      transition: background-color 0.3s ease;
+    }
+
+    .home-link:hover {
+      background-color: #004d40;
+    }
+  </style>
+</head>
+<body>
+  <div class="leaderboard-container">
+    <h2>🏆 Top Intern Performers</h2>
+    <p class="leaderboard-sub">Celebrating interns who've made the biggest impact through referrals and fundraising!</p>
+    <ol>
+      <% leaderboard.forEach((user, index) => { %>
+        <li>
+          <span><%= user.name %></span>
+          <span class="rank-badge">₹<%= user.donations %></span>
+        </li>
+      <% }) %>
+    </ol>
+    <a class="home-link" href="/">← Back to Home</a>
+  </div>
+</body>
+</html>

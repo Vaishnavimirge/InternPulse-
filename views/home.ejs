@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Intern Management Portal</title>
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+
+  <div id="sidebar">
+    <button id="sidebarClose">&times;</button>
+    <h2>👋 Welcome to InternPulse</h2>
+    <p>Select an intern to view their dashboard:</p>    
+    <ul class="intern-list">
+      <% interns.forEach(intern => { %>
+        <li><a href="/dashboard/<%= intern.id %>"><%= intern.name %></a></li>
+      <% }) %>
+    </ul>
+  </div>
+
+  <button id="sidebarToggle">&#9776;</button>
+
+  <div class="top-bar">
+    <a href="/login"><button class="login-btn">Login as Intern</button></a>
+    <div class="deadline">
+      <h2>Welcome to <span class="highlight">Intern Management Portal</span></h2>
+    </div>
+ 
+  </div>
+
+ 
+  <section class="hero">
+    <div class="hero-text">
+      <h1>🚀Start Your Internship Journey!</h1>
+      <p>Track progress, access dashboards, and stay on top of your goals with InternPulse.</p>
+    </div>
+    <div class="hero-image">
+      <img src="/images/hero-illustration.png" alt="Internship Illustration">
+    </div>
+  </section>
+
+  <section class="features">
+    <div class="feature-card">
+      <h3>📈 Track Progress</h3>
+      <p>Monitor your daily tasks and growth over time.</p>
+    </div>
+    <div class="feature-card">
+      <h3>🎯 Personalized Dashboard</h3>
+      <p>Access your own intern dashboard with real-time data.</p>
+    </div>
+    <div class="feature-card">
+      <h3>🏆 Compete on Leaderboard</h3>
+      <p>See how you rank against your peers.</p>
+    </div>
+    <div class="feature-card">
+      <h3>🗂 Organized Tasks</h3>
+      <p>Stay focused with clear deadlines and task tracking.</p>
+    </div>
+  </section>
+
+
+  <div class="main-content">
+    <h1>🌟 Unlock Your Potential</h1>
+    <p>Every great journey begins with a single step. Stay curious, keep learning, and never underestimate the power of consistency. Here, your efforts shape your future — one line of code, one task, one challenge at a time. Let today be the day you rise above limits and create something meaningful.</p>
+  </div>
+
+  <script>
+  const sidebar = document.getElementById('sidebar');
+  const toggleBtn = document.getElementById('sidebarToggle');
+  const closeBtn = document.getElementById('sidebarClose');
+
+  toggleBtn.addEventListener('click', () => {
+    sidebar.classList.add('show');
+    });
+
+   closeBtn.addEventListener('click', () => {
+     sidebar.classList.remove('show');
+    });
+
+  </script>
+  
+</body>
+</html>

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title><%= intern.name %>'s Dashboard | InternPulse</title>
+  <style>
+ 
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: linear-gradient(to right, #e0f7fa, #fffde7);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .circle {
+      position: absolute;
+      border-radius: 50%;
+      opacity: 0.1;
+      z-index: 0;
+    }
+
+    .circle.one {
+      width: 400px;
+      height: 400px;
+      background: #03a9f4;
+      top: -100px;
+      left: -100px;
+    }
+
+    .circle.two {
+      width: 300px;
+      height: 300px;
+      background: #fbc02d;
+      bottom: -80px;
+      right: -80px;
+    }
+
+    .dash-container {
+      background-color: #ffffff;
+      padding: 40px 50px;
+      border-radius: 20px;
+      max-width: 700px;
+      width: 90%;
+      box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+      position: relative;
+      z-index: 1;
+    }
+
+    .dash-container h2 {
+      color: #0d47a1;
+      font-size: 28px;
+      margin-bottom: 15px;
+      text-align: center;
+    }
+
+    .dash-container p {
+      font-size: 17px;
+      margin: 10px 0;
+      text-align: center;
+    }
+
+    .dash-container strong {
+      color: #00796b;
+    }
+
+    .dash-container h3 {
+      margin-top: 30px;
+      color: #333;
+      font-size: 22px;
+      text-align: center;
+    }
+
+    .dash-container ul {
+      list-style: none;
+      padding-left: 0;
+      margin-top: 15px;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .dash-container ul li {
+      background-color: #e3f2fd;
+      margin: 0 auto;
+      padding: 12px 18px;
+      border-radius: 10px;
+      color: #212121;
+      font-size: 16px;
+      max-width: 350px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .dash-leaderboard-link {
+      display: block;
+      margin: 30px auto 0;
+      background-color: #0288d1;
+      color: #ffffff;
+      padding: 12px 28px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+      text-align: center;
+      transition: background-color 0.3s ease;
+    }
+
+    .dash-leaderboard-link:hover {
+      background-color: #01579b;
+    }
+  </style>
+</head>
+<body>
+  <div class="circle one"></div>
+  <div class="circle two"></div>
+
+  <div class="dash-container">
+    <h2>📊 Welcome, <%= intern.name %>!</h2>
+    <p>Your Referral Code: <strong><%= intern.referralCode %></strong></p>
+    <p>Total Donations Raised: ₹<strong><%= intern.donationsRaised %></strong></p>
+
+    <h3>🏅 Your Rewards & Unlockables</h3>
+    <ul>
+      <li>🎁 Free T-shirt on ₹10,000+</li>
+      <li>📜 Certificate on ₹15,000+</li>
+      <li>🔝 Leaderboard Spot</li>
+    </ul>
+
+    <a href="/leaderboard" class="dash-leaderboard-link">View Leaderboard</a>
+  </div>
+</body>
+</html>

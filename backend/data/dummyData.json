@@ -1,0 +1,56 @@
+{
+  "interns": [
+    {
+      "id": 1,
+      "name": "Vaishnavi",
+      "referralCode": "vaishnavi2025",
+      "donationsRaised": 12500
+    },
+    {
+      "id": 2,
+      "name": "Aditya",
+      "referralCode": "aditya2025",
+      "donationsRaised": 11000
+    },
+    {
+      "id": 3,
+      "name": "Neha",
+      "referralCode": "neha2025",
+      "donationsRaised": 9500
+    },
+    {
+      "id": 4,
+      "name": "new",
+      "referralCode": "new2025",
+      "donationsRaised": 0
+    },
+    {
+      "id": 5,
+      "name": "giya",
+      "referralCode": "giya2025",
+      "donationsRaised": 0
+    }
+  ],
+  "leaderboard": [
+    {
+      "name": "Vaishnavi",
+      "donations": 12500
+    },
+    {
+      "name": "Aditya",
+      "donations": 11000
+    },
+    {
+      "name": "Neha",
+      "donations": 9500
+    },
+    {
+      "name": "new",
+      "donations": 0
+    },
+    {
+      "name": "giya",
+      "donations": 0
+    }
+  ]
+}
