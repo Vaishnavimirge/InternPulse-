@@ -58,7 +58,7 @@ Clone the repository
 
 bash
 Copy code
-git clone https://github.com/yourusername/internpulse.git
+git clone httpshttps://github.com/Vaishnavimirge/InternPulse-.git
 cd internpulse
 Install dependencies
 
