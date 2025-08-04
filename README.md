@@ -1,6 +1,12 @@
+
+https://github.com/user-attachments/assets/d64cd7de-2378-401f-935d-5aa8d7c7e49f
 # Intern Management Portal (InternPulse)
 
 Welcome to the **Intern Management Portal (InternPulse)**! This project is designed to help organizations efficiently manage their interns. It provides tools to **track progress, manage profiles, and foster healthy competition through leaderboards**.
+
+
+
+https://github.com/user-attachments/assets/11b6a7a4-642f-42fb-8edf-0e089b5b5177
 
 
 ## 🚀 Project Overview
