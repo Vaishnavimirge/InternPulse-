@@ -52,66 +52,41 @@ bash
 ├── server.js # Main Express server configuration
 ├── package.json # Node dependencies and scripts
 └── README.md # Project documentation
-```
 
 
 
-
-
-
-## ⚙️ Installation & Setup
-
+⚙️ Installation & Setup
 To get the InternPulse project up and running locally, follow these steps:
-
-1.  **Clone the repository**:
-    bash
-    git clone https://github.com/Vaishnavimirge/InternPulse-/tree/main
-    cd internpulse
-
-   
-
-2.  **Install dependencies**:
-    bash
-    npm install
-
-   
-
-3.  **Set up MongoDB**: Ensure MongoDB is installed and running locally. Alternatively, you can update the connection URI in `db.js` with your MongoDB Atlas URI.
-
-4.  **Start the server**:
-   bash
-    npm start
+1. Clone the repository:
+3. Install dependencies:
+5. Set up MongoDB: Ensure MongoDB is installed and running locally. Alternatively, you can update the connection URI in db.js with your MongoDB Atlas URI.
+6. Start the server:
 
 
 
-## 🧑‍💻 Usage
-
+🧑‍💻 Usage
 Once the server is running, you can access the portal and utilize its features:
+• Access the portal: Open your browser and visit: http://localhost:3000.
+• Homepage: View all interns listed in the sidebar. Click on an intern’s name to access their dashboard.
+• Login Page: Log in as an existing intern or add a new intern.
+• Dashboard: Check your referral code, donations raised, and any rewards you've earned.
+• Leaderboard: See top-performing interns ranked by donations.
 
-*   **Access the portal**: Open your browser and visit: `http://localhost:3000`.
-*   **Homepage**: View all interns listed in the sidebar. Click on an intern’s name to access their dashboard.
-*   **Login Page**: Log in as an existing intern or add a new intern.
-*   **Dashboard**: Check your referral code, donations raised, and any rewards you've earned.
-*   **Leaderboard**: See top-performing interns ranked by donations.
 
 
-## 🛠️ Technologies Used
-
+🛠️ Technologies Used
 The project leverages a modern web development stack:
+• Node.js & Express.js: Used for the backend server and routing.
+• MongoDB & Mongoose: Utilized for data storage and schema modeling.
+• EJS: Serves as the templating engine for dynamic HTML rendering.
+• HTML5 / CSS3: Provides the markup and styling for the application.
+• JavaScript: Used for client-side scripting.
+• Responsive Design: Ensures compatibility and optimal experience across both desktop and mobile devices.
 
-*   **Node.js & Express.js**: Used for the backend server and routing.
-*   **MongoDB & Mongoose**: Utilized for data storage and schema modeling.
-*   **EJS**: Serves as the templating engine for dynamic HTML rendering.
-*   **HTML5 / CSS3**: Provides the markup and styling for the application.
-*   **JavaScript**: Used for client-side scripting.
-*   **Responsive Design**: Ensures compatibility and optimal experience across both desktop and mobile devices.
 
 
-## 📷 Image Assets
-
-Images used within this project are stored in the `/public/images/` directory. These include:
-
-*   **Hero illustration** for the homepage.
-*   **Icons** for dashboards and various features.
-*   **Background and UI decorations**.
-
+📷 Image Assets
+Images used within this project are stored in the /public/images/ directory. These include:
+• Hero illustration for the homepage.
+• Icons for dashboards and various features.
+• Background and UI decorations.
