@@ -56,6 +56,9 @@ bash
 
 
 
+
+
+
 ## ⚙️ Installation & Setup
 
 To get the InternPulse project up and running locally, follow these steps:
@@ -111,5 +114,4 @@ Images used within this project are stored in the `/public/images/` directory. T
 *   **Hero illustration** for the homepage.
 *   **Icons** for dashboards and various features.
 *   **Background and UI decorations**.
-
 
